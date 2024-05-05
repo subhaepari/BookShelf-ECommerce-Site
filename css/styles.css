@@ -1,0 +1,385 @@
+body{
+
+   /*  background-image: linear-gradient(rgb(237, 227, 37), rgb(38, 203, 186));
+ */
+
+
+ /* background-image: linear-gradient(rgb(40, 240, 236), white, rgb(38, 203, 186)); */
+
+ background-image: linear-gradient(rgb(38, 203, 186), white, white, white, rgb(38, 203, 186));
+
+}
+
+.logo{
+
+    font-weight:800 ;
+    letter-spacing: 1;
+    text-shadow: 8px 8px 8px white; 
+    margin-bottom: 0;
+}
+
+.logo-foot{
+    font-weight:200 ;
+    font-size: 2;
+    text-align: end;
+    margin-bottom: 0;
+}
+
+.footer {
+    /* position: fixed; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+  }
+
+  .footer-sticky {
+    position: fixed;
+
+  }
+
+.footer-box{
+    padding:20px;
+}
+
+.footer-box .fa{
+ 
+    margin-right:8px;
+    font-size:25px;
+    height:40px;
+    width:40px;
+    text-align:center;
+    padding-top:7px;
+    border-radius:2px;
+    background-image: linear-gradient(to right, rgb(233, 199, 137), orange);
+}
+
+
+.footer-box img{
+ 
+    margin-right:8px;
+}
+
+
+    
+
+.breadcrumb a{
+    text-decoration:none;
+    color : rgb(8, 29, 164);
+}
+   
+.breadcrumb a:hover{
+    text-decoration:underline;
+}
+
+
+/***************Login Page*********************/
+
+#btn-sign-in, #btn-register {
+    /* background-color: rgb(225, 182, 103); */
+    background-color: white;
+    color: rgb(32, 162, 149);
+    width:30%;
+    font-weight: 600;
+    font-size: 30px;
+    padding: 10px;
+    padding-bottom: 7px;
+    border-radius: 20;
+    border-color: rgb(237, 176, 63);
+    border-width: 10px;
+    letter-spacing: 1px;
+   
+
+}
+#btn-sign-in:hover, #btn-register:hover{
+    transform: scale(1.2);
+}
+
+/************** Header styles ************************/
+
+
+h1{
+    color:rgb(32, 162, 149);
+    /* color:rgb(38, 203, 186); */
+}
+
+nav a img:hover{
+ transform: scale(1.5);
+}
+
+
+.navbar{
+    /* background-color: rgb(229, 183, 66); */
+    /* background-image: linear-gradient(rgb(38, 203, 186), white, rgb(38, 203, 186)); */
+    /* background-image: linear-gradient(to right, #a517ba, #5f1782); */
+    /* background-image: linear-gradient(to right, rgb(236, 191, 107), orange); good*/
+    background-image: linear-gradient(to right, rgb(233, 199, 137), orange);
+
+
+}
+
+.navbar-nav li a{
+    color: #fff !important;
+    font-weight:600px;
+    float: right;
+    text-align: left;
+
+}
+
+.fa-bars{
+    color:#fff;
+    font-size:30px !important;
+}
+
+.navbar-toggler{
+    outline: none !important;
+    border: none;
+}
+
+
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* .fa-search{
+    color:#fff;
+    outline: none;
+    border: none;
+} */
+
+
+h1 small{
+    font-size:smaller;
+}
+
+
+
+/************** Home Page ***************/
+
+#btn-bookshelf-browse, #btn-bookshelf-browse1{
+    /* background-color: rgb(237, 176, 63);
+    color: rgb(32, 162, 149);
+    width:40%;
+    font-weight: 600;
+    font-size: 40px;
+    padding: 10px;
+    padding-bottom: 7px;
+    border-radius: 20; */
+
+    background-color: white;
+    color: rgb(32, 162, 149);
+    width:50%;
+    font-weight: 600;
+    font-size: 40px;
+    padding: 10px;
+    padding-bottom: 7px;
+    border-radius: 20;
+    border-color: rgb(237, 176, 63);
+    border-width: 10px;
+    letter-spacing: 1px;
+    margin: 20px,20px;
+
+}
+#btn-bookshelf-browse:hover, #btn-bookshelf-browse1:hover{
+    transform: scale(1.2);
+}
+
+
+.quote-center{
+    color: rgb(32, 162, 149);
+    /* border-width: 5px;
+    border-color: rgb(32, 162, 149); */
+    padding: 4px ;
+   
+}
+
+
+
+
+/**** Carousel styles ****/
+
+.carousel-item p{
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(32, 162, 149);
+}
+
+/* .carousel-caption {
+    position: absolute;
+    top:-40px
+ } */
+
+ /* .carousel-caption {
+    top: 0;
+    bottom: auto;
+} */
+
+.carousel-caption {
+    top: auto;
+    bottom: 0;
+}
+
+#carousel-item-3 .carousel-caption {
+    top: 0;
+    bottom: auto;
+}
+
+
+
+/*********** card styles  **************/
+
+.card img:hover{
+    transform: scale(1.5);
+}
+
+.card-footer a:hover{
+ /* transform: translateY(-10px) */
+ transform: scale(1.5);
+}
+
+.card-title a{
+    text-decoration:none;
+    color : black;
+}
+   
+.card-title a:hover{
+    text-decoration:underline;
+    color : rgb(8, 29, 164);
+}
+   
+
+
+
+/********** Off Canvas Menu ************************************/
+
+ /* The side navigation menu */ 
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+   /* background-color: #111; Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 80px; /* Place content 60px from the top , then changed to 80*/
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+
+  /* Position and style the close button (top right corner) */
+/* .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    font-size: 24px;
+    margin-left: 50px;
+  } */
+
+  .sidenav .closebtn {
+    position: relative;
+    background-color: transparent;
+    font-size: 24px;
+    /* border:#fff; */
+    color:#fff;
+    /* display:none; */
+    /* top: 0; */
+    /* right: 0px; */
+    /* font-size: 36px; */
+    /* text-align: end; */
+    text-decoration: none;
+    margin-left: 10px;
+    
+  }
+
+  .sidenav .closebtn:hover {
+    position: relative;
+    display: inline;
+    /* top: 0; */
+    /* right: 50px; */
+    /* font-size: 36px; */
+    font-size: 24px;
+    /* margin-left: 100px; */
+  }
+
+  .catalogue-head{
+    /* background-color: white;
+    */
+    /* margin:10x, 10px; */
+    padding:10x, 10px;
+
+  }
+
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  /* @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  } */
+
+
+/* ***************** */
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    /* .sidenav {padding-top: 15px;} */
+    /* .sidenav a {font-size: 12px;} */
+
+    /* .sidenav {
+        width: 150px;
+    }
+    #main {
+        margin-left: 150px;
+      } */
+  }
+
+
+@media only screen and (min-width: 600px) {
+    .sidenav {
+        width: 250px;
+    }
+    #main {
+        margin-left: 250px;
+      }
+  }
+
+
+
+
+
+
+
+
+
+  /******* Cart checkout and Payment pages *********/
+  #btn-place-order{
+
+    background-color: white;
+    color: rgb(32, 162, 149);
+    width:50%;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 10px;
+    padding-bottom: 7px;
+    border-radius: 20;
+    border-color: rgb(237, 176, 63);
+    border-width: 10px;
+    letter-spacing: 1px;
+    margin: 20px,20px;
+
+  }
+  #btn-proceed-pay:hover,  #btn-place-order:hover{
+    transform: scale(1.2);
+}

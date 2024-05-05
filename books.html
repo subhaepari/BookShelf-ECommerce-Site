@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BookShelf</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.jpeg">
+    <style>
+
+
+     
+        .checked {
+        color: orange;
+        }
+
+        /* aside {
+            width: 15%;
+            height: max-content; */
+/*             padding-left: 15px;
+            margin-left: 15px; */
+            /* float: left;
+            font-style: italic;
+            background-color: lightgray;
+        } */
+  
+        /* main{
+            width:85%;
+            float: left;
+        } */
+
+
+        #accordionPanel  a { 
+
+            text-decoration: none;
+
+
+        }
+
+
+      </style>
+    
+</head>
+
+<body>
+    <header>
+        
+        <!-- <h1>BookShelf</h1> -->
+
+
+
+        
+        <nav class="navbar navbar-expand-sm bg-light"> <!--bg-dark navbar-dark bg-transparent-->
+            <div class="container-fluid">
+                <div class="d-flex">
+                    <a class="navbar-brand" href="javascript:void(0)">
+                        <img src="images/favicon.jpeg"/>
+                    </a> 
+                    <div>
+                      <h1 class="logo">BookShelf </h1>
+                      <h6 class="logo-foot">The Readers Mart</h6>
+                    </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <i class="fa fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="mynavbar">
+
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:openNav()">Show Catalogue</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Best Sellers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Off the Press</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cart.html">Top Deals</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cart.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        
+                        <input class="form-control me-2" type="text" placeholder="Search...">
+                        <button type="submit">
+                            
+                            <i class="fa fa-search"></i>
+                        </button>
+                       
+                    </form>
+
+                </div>
+ 
+                <div class="d-flex justify-content-end" id="header-icons">
+                    <a class="nav-link" href="index.html" title="Home Page">
+                        <img src="images/icons/Double-J-Design-Origami-Colored-Pencil-Red-home.48.png" alt="Home" >
+                    </a>
+
+                    <a class="nav-link" href="login.html" title="User Profile">
+                        <img src="images/icons/Custom-Icon-Design-Pretty-Office-2-Man.48.png" alt="Login">
+                        
+                    </a>
+                    <a class="nav-link" href="javascript:void(0)" title="Wishlist">
+                        <img src="images/icons/Hopstarter-Sleek-Xp-Basic-Favorite.48.png" alt="Wishlist">
+                    </a>
+                    <a class="nav-link" href="/cart.html" title="Cart">
+
+                        <img src="images/icons/Artdesigner-Urban-Stories-Cart.48.png" alt="Cart">
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+<!--         <nav class="navbar navbar-expand-lg navbar-dark  bg-light bg-primary">
+            <div class="container">
+
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="login.html">Login</a>
+                <a class="nav-link" href="cart.html">Cart</a>
+            </div>
+
+        </nav> -->
+
+<!--         <button class="btn btn-primary d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasId">
+            Open Offcanvas Sidebar
+          </button> -->
+          <!-- <button class="btn btn-primary d-md-none" type="button" data-bs-toggle="accordion" data-bs-target="#accordionPanel">
+            Browse Catalogue
+          </button> -->
+          <!-- <span onclick="openNav()">open</span> -->
+    </header>
+
+
+
+
+   
+        
+<!-- 
+        <div class="offcanvas offcanvas-start offcanvas-lg" id="offcanvasId show"> 
+            <div class="offcanvas-header">
+              <h1 class="offcanvas-title">Book Catalogue</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+            
+            </div>
+        </div>     -->
+    
+          
+
+            
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <!-- <p class="catalogue-head"> Book Catalogue <button class="closebtn" title="Close Catalog" onclick="closeNav()">&times;</button></p> -->
+            
+           
+        <div class="container accordion accordion-flush" id="accordionPanel">
+            <div class="accordion-item border-0">
+              <h2 class="accordion-header" id="heading1">
+                <button class="accordion-button bg-info text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapseOne">
+                  Children
+                </button>
+              </h2>
+              <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1">
+                <div class="accordion-body">
+                  <!-- <strong>This is the first item's accordion body.</strong>  -->
+                  <ul>
+                    <li><a href="#">Fantasy</a></li>
+                    <li><a href="books.html">Adventure</a></li>
+                    <li><a href="books.html">Science Fiction</a></li>
+                    <li><a href="books.html">Academics</a></li>
+                    <li><a href="books.html">Comics and Magazines</a></li>
+                  </ul>
+                 </div>
+              </div>
+            </div>
+            <div class="accordion-item border-0 bg-success text-dark">
+              <h2 class="accordion-header" id="heading2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapseTwo">
+                  Health & Wellness
+                </button>
+              </h2>
+              <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2">
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading3">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapseThree">
+                    Personality
+                  </button>
+                </h2>
+                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3">
+                  <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+        
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading4">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapseThree">
+                  Art & Photography
+                </button>
+              </h2>
+              <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+          
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading5">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapseThree">
+                Novels and Fiction
+              </button>
+            </h2>
+            <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+        
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading6">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapseThree">
+                Literature and Linguistic
+              </button>
+            </h2>
+            <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+        
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading7">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapseThree">
+                Culinary
+              </button>
+            </h2>
+            <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+       
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading8">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapseThree">
+                Parenting & Families
+              </button>
+            </h2>
+            <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+        
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading9">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapseThree">
+                Home & Garden
+              </button>
+            </h2>
+            <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+        
+          </div>
+
+
+        <!-- </div>
+    </div>     -->
+
+    </div> <!--side nav-->
+
+   
+
+    
+
+        <main role="main" id="main">
+            <div class="container">
+                <nav class="my-3 ms-3" style="--bs-breadcrumb-divider: '>';">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Books</li>
+                    </ol>
+                </nav>
+
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card rounded mb-4 shadow-sm w-50 mx-auto">
+                            <a href="/book-detail.html">
+                            <img class="card-img-top p-2" src="images/books/children/TheHuntForTheGoldenBook.jpg">
+                             </a>
+
+                            <div class="card-body">
+                                <h6 class="card-title">
+                                    <a href="/book-detail.html">Hunt for the Golden Book </a>
+                                    <br/>
+                                    <small class="text-muted">by Elisibeta Dami</s></small>
+
+                                </h6>
+                                <p class="card-text">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <!-- <span class="fa fa-star-o checked"></span> -->
+                                        <!-- <span class="fa fa-star-half-o checked"></span> -->
+                                </p>
+                                <hr/>
+                                <p class="card-text">
+                                    &#x20B9;296 <br/>
+                                    <small class="text-muted">MRP: <s>&#8377;450</s></small>
+                            
+                                </p>
+
+
+
+                    <!--             <p class="card-text">*****</p>
+                                <p class="card-text">RS499</p> -->
+                            </div>
+
+                            <div class="card-footer d-flex justify-content-between" >
+
+
+                                <a href="javascript:(void)" title="Add to Cart" data-bs-toggle="offcanvas" data-bs-target="#add-cart-confirm-canvas">
+                                    <span class="fa fa-shopping-cart" style="font-size:30px;color:rgb(41, 156, 64)"></span>
+                                </a>
+
+                                <a href="javascript:(void)" title="Add to Wishlist">
+                                    <span class="fa fa-heart" style="font-size:24px;color:rgb(226, 18, 18)"></span>
+                                </a>
+                                <a href="javascript:(void)" title="Share">
+                                    <i class="fa fa-share" style="font-size:24px;color:rgb(53, 59, 165)"></i>
+                                </a>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                    <div class="col-md-4">
+                        <div class="card rounded mb-4 shadow-sm w-50 mx-auto">
+                            <img class="card-img-top p-2" src="images/books/children/HarryPotterPhilosopherStone.jpg">
+                            <div class="card-body">
+                                <h6 class="card-title">Harry Potter and the Philosopher's Stone<br/>
+                                    <small class="text-muted">by J.K. Rowling</s></small>
+
+                                </h6>
+                                <p class="card-text">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                </p>
+                                <hr/>
+                                <p class="card-text">
+                                    &#x20B9;296 <br/>
+                                    <small class="text-muted">MRP: <s>&#8377;450</s></small>
+                            
+                                </p>                            
+                                </div>
+                                  <div class="card-footer d-flex justify-content-between" >
+                                    <a href="javascript:(void)" title="Add to Cart">
+                                        <span class="fa fa-shopping-cart" style="font-size:30px;color:rgb(41, 156, 64)"></span>
+                                    </a>
+                                    <a href="javascript:(void)"" title="Add to Wishlist">
+                                        <span class="fa fa-heart" style="font-size:24px;color:rgb(226, 18, 18)"></span>
+                                    </a>
+                                    <a href="javascript:(void)"" title="Share">
+                                        <i class="fa fa-share" style="font-size:24px;color:rgb(53, 59, 165)"></i>
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-4">
+                        <div class="card rounded mb-4 shadow-sm w-50 mx-auto">
+                            <img class="card-img-top p-2" src="images/books/children/TheFamousFive.jpg">
+                            <div class="card-body">
+                                <h6 class="card-title">The Famous Five<br/>
+                                    <small class="text-muted">by Enid Blyton</s></small>
+
+                                </h6>
+                                <p class="card-text">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                </p>
+                                <hr/>
+                                <p class="card-text">
+                                    &#x20B9;296 <br/>
+                                    <small class="text-muted">MRP: <s>&#8377;450</s></small>
+                            
+                                </p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between" >
+                                <a href="javascript:(void)" title="Add to Cart">
+                                    <span class="fa fa-shopping-cart" style="font-size:30px;color:rgb(41, 156, 64)"></span>
+                                </a>
+                                <a href="javascript:(void)" title="Add to Wishlist">
+                                    <span class="fa fa-heart" style="font-size:24px;color:rgb(226, 18, 18)"></span>
+                                </a>
+                                <a href="javascript:(void)" title="Share">
+                                    <i class="fa fa-share" style="font-size:24px;color:rgb(53, 59, 165)"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card rounded mb-4 shadow-sm w-50 mx-auto">
+                            <img class="card-img-top p-3" src="images/books/children/HowToCatchAStar.jpg">
+                            <div class="card-body">
+                                <h6 class="card-title">How To Catch A Star<br/>
+                                    <small class="text-muted">by Oliver Jeffers</s></small>
+
+                                </h6>
+                                <p class="card-text">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                </p>
+                                <hr/>
+                                <p class="card-text">
+                                    &#x20B9;296 <br/>
+                                    <small class="text-muted">MRP: <s>&#8377;450</s></small>
+                            
+                                </p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between" >
+                                <a href="javascript:(void)" title="Add to Cart">
+                                    <span class="fa fa-shopping-cart" style="font-size:30px;color:rgb(41, 156, 64)"></span>
+                                </a>
+                                <a href="javascript:(void)" title="Add to Wishlist">
+                                    <span class="fa fa-heart" style="font-size:24px;color:rgb(226, 18, 18)"></span>
+                                </a>
+                                <a href="javascript:(void)" title="Share">
+                                    <i class="fa fa-share" style="font-size:24px;color:rgb(53, 59, 165)"></i>
+                                </a>
+                            </div>
+    
+                        </div>
+                    </div>
+                                 
+                    <div class="col-md-4">
+                        <div class="card rounded mb-4 shadow-sm w-50 mx-auto">
+                            <img class="card-img-top p-3" src="images/books/children/TheSmartestGiantInTown.jpg">
+                            <div class="card-body">
+                                <h6 class="card-title">The Smartest Giant in Town<br/>
+                                    <small class="text-muted">by Julia Donaldson</s></small>
+
+                                </h6>
+                                <p class="card-text">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                </p>
+                                <hr/>
+                                <p class="card-text">
+                                    &#x20B9;296 <br/>
+                                    <small class="text-muted">MRP: <s>&#8377;450</s></small>
+                            
+                                </p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between" >
+                                <a href="javascript:(void)" title="Add to Cart">
+                                    <span class="fa fa-shopping-cart" style="font-size:30px;color:rgb(41, 156, 64)"></span>
+                                </a>
+                                <a href="javascript:(void)" title="Add to Wishlist">
+                                    <span class="fa fa-heart" style="font-size:24px;color:rgb(226, 18, 18)"></span>
+                                </a>
+                                <a href="javascript:(void)" title="Share">
+                                    <i class="fa fa-share" style="font-size:24px;color:rgb(53, 59, 165)"></i>
+                                </a>
+                            </div>
+    
+                        </div>
+                    </div>     
+                    
+                               
+                    <div class="col-md-4 justify-content-center">
+                        <div class="card rounded mb-4 shadow-sm w-50 mx-auto">
+                            <img class="card-img-top p-3" src="images/books/children/paper-dolls.png">
+                            <div class="card-body">
+                                <h6 class="card-title">Hunt for the Golden Book<br/>
+                                    <small class="text-muted">by Julia Donaldson</s></small>
+
+                                </h6>
+                                <p class="card-text">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                </p>
+                                <hr/>
+                                <p class="card-text">
+                                    &#x20B9;296 <br/>
+                                    <small class="text-muted">MRP: <s>&#8377;450</s></small>
+                            
+                                </p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between" >
+                                <a href="javascript:(void)" title="Add to Cart">
+                                    <span class="fa fa-shopping-cart" style="font-size:30px;color:rgb(41, 156, 64)"></span>
+                                </a>
+                                <a href="javascript:(void)" title="Add to Wishlist">
+                                    <span class="fa fa-heart" style="font-size:24px;color:rgb(226, 18, 18)"></span>
+                                </a>
+                                <a href="javascript:(void)" title="Share">
+                                    <i class="fa fa-share" style="font-size:24px;color:rgb(53, 59, 165)"></i>
+                                </a>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>    
+
+                <div class="row">
+
+                    <div class="col-md-4 justify-content-center">
+
+                        <div class="card rounded mb-4 shadow-sm w-50 mx-auto">
+                            <img class="card-img-top p-3" src="images/books/children/TheEnchantedWorld.jpg">
+                            <div class="card-body">
+                                <h6 class="card-title">The Enchanted World<br/>
+                                    <small class="text-muted">by Enid Blyton</s></small>
+
+                                </h6>
+                                <p class="card-text">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                </p>
+                                <hr/>
+                                <p class="card-text">
+                                    &#x20B9;296 <br/>
+                                    <small class="text-muted">MRP: <s>&#8377;450</s></small>
+                            
+                                </p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between" >
+                                <a href="javascript:(void)" title="Add to Cart">
+                                    <span class="fa fa-shopping-cart" style="font-size:30px;color:rgb(41, 156, 64)"></span>
+                                </a>
+                                <a href="javascript:(void)"" title="Add to Wishlist">
+                                    <span class="fa fa-heart" style="font-size:24px;color:rgb(226, 18, 18)"></span>
+                                </a>
+                                <a href="javascript:(void)"" title="Share">
+                                    <i class="fa fa-share" style="font-size:24px;color:rgb(53, 59, 165)"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+
+
+
+                    <!-- <div class="col-md-4">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="images/book1.jpeg" alt="Avatar">
+                                </div>
+                                <div class="flip-card-back">
+                                    <h1>John Doe</h1>
+                                    <p>Architect & Engineer</p>
+                                    <p>We love that guy</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            
+            </div>
+
+
+        <!-- Offcanvas Sidebar -->
+        <div class="offcanvas offcanvas-start" id="add-cart-confirm-canvas">
+            <div class="offcanvas-header">
+                <h1 class="offcanvas-title"></h1>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                    <h1 >Added to cart <i class="fa-regular fa-circle-check" style="font-size:24px;color:rgb(53, 165, 73)"></i></h1>
+                
+                <!-- <p>Added to cart.</p> -->
+                    <a href="book-detail.html"><img class="card-img-top p-2" src="images/books/children/TheHuntForTheGoldenBook.jpg"></a>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <p>
+                        <b>Cart subtotal</b><span class="text-primary">(4 items)</span>:  <span class="text-primary"><b>&#x20B9;1608</b></span>
+                    </p>     
+                    <br/>
+                    <!-- <div class="d-flex">
+                        <label class="" for="review-cart"><b>Review cart:</b></label>
+                        <a id="review-cart" href="/cart.html" title="Cart" >
+                            <img src="images/icons/Artdesigner-Urban-Stories-Cart.48.png" alt="Cart">
+                        </a>
+                    </div> -->
+
+                    <br/>
+                    <!-- <button class="btn btn-secondary bg-success" type="button">Proceed to checkout (3 items)</button> -->
+                    <a class="btn btn-secondary bg-success" href="/cart.html">Proceed to checkout (4 items)</a>
+
+            </div>
+        </div>
+
+        </main>
+        <footer>
+            <div class="footer text-center">
+              <hr/>
+              <p>Website designed and crafted by Subha Epari @Pluralsight. </p>
+            </div>
+          </footer>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+crossorigin="anonymous"></script>
+
+<script>   
+    /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+   function openNav() {
+   // alert("menu opening")
+       document.getElementById("mySidenav").style.width = "250px";
+       document.getElementById("main").style.marginLeft = "250px";
+   }
+
+   /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+   function closeNav() {
+    //alert("menu closing")
+       document.getElementById("mySidenav").style.width = "0";
+       document.getElementById("main").style.marginLeft = "0";
+   }
+</script>
+
+
+</html>

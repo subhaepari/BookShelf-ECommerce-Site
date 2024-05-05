@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Book Shelf</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet">      
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.jpeg">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm bg-light"> 
+            <div class="container-fluid">
+                <div class="d-flex">
+                    <a class="navbar-brand" href="javascript:void(0)">
+                        <img src="images/favicon.jpeg"/>
+                    </a> 
+                    <div>
+                      <h1 class="logo">BookShelf </h1>
+                      <h6 class="logo-foot">The Readers Mart</h6>
+                    </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                   
+                    <i class="fa fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="mynavbar">
+
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Best Sellers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Off the Press</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cart.html">Top Deals</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cart.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="text" placeholder="Search...">
+                        <button type="submit">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="d-flex justify-content-end" id="header-icons">
+                    <a class="nav-link" href="index.html" title="Home Page">
+                        <img src="images/icons/Double-J-Design-Origami-Colored-Pencil-Red-home.48.png" alt="Home" >
+                    </a>
+                    <a class="nav-link" href="login.html" title="User Profile">
+                        <img src="images/icons/Custom-Icon-Design-Pretty-Office-2-Man.48.png" alt="Login">
+                    </a>
+                    <a class="nav-link" href="javascript:void(0)" title="Wishlist">
+                        <img src="images/icons/Hopstarter-Sleek-Xp-Basic-Favorite.48.png" alt="Wishlist">
+                    </a>
+                    <a class="nav-link" href="/cart.html" title="Cart">
+                        <img src="images/icons/Artdesigner-Urban-Stories-Cart.48.png" alt="Cart">
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+
+
+    <main role="main">
+        <div class="container">
+
+            <nav class="my-3 ms-3" style="--bs-breadcrumb-divider: '>';">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                    <li class="breadcrumb-item"><a href="/books.html">Books</a></li>                  
+                    <li class="breadcrumb-item"><a href="/book-detail.html">Book Detail</a></li>
+                    <li class="breadcrumb-item"><a href="/cart.html">Cart Checkout</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Payment & Order</li>
+                </ol>
+            </nav>
+            <div class="p-2 text-center">
+                <h2>Shipping and Payment Details</h2>
+            </div>
+
+            <!-- <div class="row">
+               
+
+                <div class="table-responsive-sm">
+                    <table class="table table-sm "> 
+                        <thead>
+                            <tr>
+                                <th scope="col" > 
+                                    <input class="form-check-input" type="checkbox" value="" id="cart-item-chk-all" title="Select All" checked/>
+                                </th>
+                                <th scope="col"></th>
+                                <th scope="col"></th>
+                                <th scope="col" class="text-end">Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="align-middle"><input class="form-check-input" type="checkbox" value="" id="cart-item-chk-1" checked/></td>
+                                <td class="w-25"><img src="images/cart/paper-dolls.png" alt="Paper Dolls" width="150" height="200"></td>
+                                <td >
+                                    <div >
+                                            <h5>Paper Dolls</h5>
+                                            <p>by Julia Donaldson</p>
+                                    </div>
+                                  
+                                    <div class="align-text-bottom">
+                                        <a href="javascript:(void)" >Delete</a> | <a href="javascript:(void)" >Save for later</a> | <a href="javascript:(void)" >Share</a>
+                                        <br/><br/>
+                                        Quantity: <input  style="max-width:50px;padding-right:0;" type=number class="form-control" value="1"> 
+                                        <br/>
+                                    </div>
+                                </td>                               
+                                <td class="text-end">&#x20B9;328 <br/><small>MRP: <s>&#x20B9;499</s></small></td>
+                            </tr>
+                            <tr>
+                                <td class="align-middle"><input class="form-check-input" type="checkbox" value="" id="cart-item-chk-2" checked/></td>
+                                <td><img src="images/cart/room-on-the-broom.png" alt="Room on the Broom" width="150" height="200"></td>
+                                <td>
+                                    <div>
+                                        <h5>The Hunt for the Golden Book</h5>
+                                        <p>by Elisabeta Dami</p>
+                                    </div>                                    
+                                    <div class="align-text-bottom">
+                                        <a href="javascript:(void)" >Delete</a> | <a href="javascript:(void)" >Save for later</a> | <a href="javascript:(void)" >Share</a>
+                                        <br/><br/>
+                                        Quantity: <input  style="max-width:50px;padding-right:0;" type=number class="form-control" value="1"> 
+                                        <br/>
+                                    </div>
+                                </td>  
+                                <td class="text-end">&#x20B9;296 <br/><small>MRP: <s>&#8377;450</s></small></td>
+                            </tr>
+                            <tr>
+                                <td class="align-middle"><input class="form-check-input" type="checkbox" value="" id="cart-item-chk-3" checked/></td>
+                                <td><img src="images/cart/how-to-catch-a-star.png" alt="How to Catch A Star" width="150" height="200"></td>
+                                <td>
+                                    <div>
+                                        <h5>The Hunt for the Golden Book</h5>
+                                        <p>by Elisabeta Dami</p>
+                                    </div>                                    
+                                    <div class="align-text-bottom">
+                                        <a href="javascript:(void)" >Delete</a> | <a href="javascript:(void)" >Save for later</a> | <a href="javascript:(void)" >Share</a>
+                                        <br/><br/>
+                                        Quantity: <input  style="max-width:50px;padding-right:0;" type=number class="form-control" value="1"> 
+                                        <br/>
+                                    </div>
+                                </td>  
+                                <td class="text-end">&#x20B9;314 <br/>
+                                    <span class="small">MRP: <s>&#8377;350</s></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="align-middle"><input class="form-check-input" type="checkbox" value="" id="cart-item-chk-1" checked/></td>
+                                <td class="w-25"><img src="images/cart/TheHuntForGoldenBook.jpg" alt="Paper Dolls" width="150" height="180"></td>
+                                <td>
+                                    <div>
+                                        <h5>The Hunt for the Golden Book</h5>
+                                        <p>by Elisabeta Dami</p>
+                                    </div>                                    
+                                    <div class="align-text-bottom">
+                                        <a href="javascript:(void)" >Delete</a> | <a href="javascript:(void)" >Save for later</a> | <a href="javascript:(void)" >Share</a>
+                                        <br/><br/>
+                                        Quantity: <input  style="max-width:50px;padding-right:0;" type=number class="form-control" value="1"> 
+                                        <br/>
+                                    </div>
+                                </td>                               
+                                <td class="text-end">&#x20B9;370 <br/><small>MRP: <s>&#x20B9;499</s></small></td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                              <td colspan="3">Your order sub-total:</td>  
+                              <td class="text-end">&#x20B9;1308</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">Shipping charges:</td>  
+                                <td class="text-end">&#x20B9;200</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">Tax:</td>  
+                                <td class="text-end">&#x20B9;100</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3"><strong>Your order total: </strong></td>  
+                                <td class="text-end"><strong>&#x20B9;1608</strong></td>
+                              </tr>
+                          </tfoot>
+                    </table>
+                </div>  
+            </div> -->
+
+
+
+
+            <div class="row g-5">
+                <div class="col-md-5 col-lg-4 order-md-last">
+
+                <!-- <h4 class="mb-3">Redeem coupon</h4>
+                    <form class="card p-2">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Promo code">
+                            <button type="submit" class="btn btn-secondary">Redeem</button>
+                        </div>
+                    </form> -->
+                    <hr class="my-4">
+                    <h4 class="mb-3">Delivery Address</h4>
+                    <p class="card p-2">
+                        
+                        Pluralsight India Pvt. Ltd. <br/>
+                        Primco Spectrum, Arekere Jn, <br/>
+                        Bengaluru, Karnataka <br/>
+                        Pin - 5600076
+
+                    </p>
+                    <a  href="javascript:void(0)">Change Address</a>
+
+
+                </div>
+
+                <div class="col-md-7 col-lg-8">
+
+                    <hr class="my-4">
+
+                    <!--Delivery Address-->
+                    <div class="row mb-3">
+                        <!-- <h4 class="col-md-4">Delivery Address</h4>
+                        <p class="col-md-5">
+                            
+                            Pluralsight India Pvt. Ltd. <br/>
+                            11<sup>th</sup> floor, Arekere Jn, <br/>
+                            Bengaluru, Karnataka <br/>
+                            Pin - 5600076
+
+                        </p>
+                        <a class="col-md-3" href="javascript:void(0)">Change</a> -->
+                        
+                        <h4 class="mb-3">Redeem coupon</h4>
+                        <div class="w-50 text-center" >
+                        <form class="card p-2">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Promo code">
+                                <button type="submit" class="btn btn-secondary">Redeem</button>
+                            </div>
+                        </form>
+                        </div>
+
+                    </div>
+
+                    <hr class="my-4">
+
+                    <!--Payment Method-->
+
+                    <form class="needs-validation" action="done.html" method="get" novalidate>
+
+                  
+                      
+                        <!--Payment Method-->
+                        <div class="my-3">
+                            <h4 class="mb-3">Select payment method</h4>
+                            <div class="form-check">
+                                <input id="credit" name="paymentMethod" type="radio" class="form-check-input" value="card" onclick="onChangePayMethod(this.value)" checked
+                                    required>
+                                <label class="form-check-label" for="credit">Credit or Debit card</label>
+                            </div>
+
+                            <div id="card-details">
+                                <div class="row gy-3">
+                                    <div class="form-floating col-md-5 offset-md-1">
+                                        <input type="text" class="form-control input-sm" id="cc-name"  aria-label="Name on card" required>
+                                        <label for="cc-name">Name on card</label>
+                                        <small class="text-muted">Full name as displayed on card</small>
+                                        <div class="invalid-feedback">
+                                            Name on card is required.
+                                        </div>
+                                    </div>
+    
+                                    <div class="form-floating col-md-5 ">
+                                        <input type="text" class="form-control input-sm" id="cc-number" required>
+                                        <label for="cc-number">Card number</label>
+                                        <div class="invalid-feedback">
+                                            Credit card number is required.
+                                        </div>
+                                    </div>
+    
+                                    <div class="form-floating col-md-3 offset-md-1" >
+                                        <input type="text" class="form-control form-control-sm" id="cc-expiration" required>
+                                        <label for="cc-expiration">Expiration date</label>
+                                        <div class="invalid-feedback">
+                                            Expiration date required.
+                                        </div>
+                                    </div>
+    
+                                    <div class="form-floating col-md-3 ">
+                                        <input type="text" class="form-control form-control-sm" id="cc-cvv" required>
+                                        <label for="cc-cvv">CVV</label>
+                                        <div class="invalid-feedback">
+                                            Security code required.
+                                        </div>
+                                    </div>
+                                </div> 
+                             </div>      
+                            <div class="form-check">
+                                <input id="netBanking" name="paymentMethod" type="radio" class="form-check-input" value="netBanking" onclick="onChangePayMethod(this.value)" required>
+                                <label class="form-check-label" for="debit">Net Banking</label>
+                                
+                                        <div class="col-md-5">
+                                            <!-- <label for="bank" class="form-label">Bank</label> -->
+                                            <select class="form-select" id="bank" required hidden disabled>
+                                                <option value="">Choose your bank</option>
+                                                <option>SBI</option>
+                                                <option>ICICI</option>
+                                                <option>HSBC</option>
+                                                <option>HDFC</option>
+                                                <option>AU Bank</option>
+                                                <option>Citi Bank</option>
+                                            </select>
+                                            <div class="invalid-feedback">
+                                                Please select a valid bank.
+                                            </div>
+                                        </div>
+
+                            </div>
+                            <div class="form-check">
+                                <input id="upi" name="paymentMethod" type="radio" class="form-check-input" value="upi" onclick="onChangePayMethod(this.value)" required>
+                                <label class="form-check-label" for="upi">UPI</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="cod" name="paymentMethod" type="radio" class="form-check-input" value="cod" onclick="onChangePayMethod(this.value)"  required>
+                                <label class="form-check-label" for="paypal">Cash on Delivery</label>
+                            </div>
+
+                        </div>
+                        
+
+                        <hr class="my-4">
+                        <div class="text-center">
+                             <button  id="btn-place-order" class="w-75 btn btn-primary btn-lg" type="submit">Place order</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <footer>
+        <div class="footer text-center">
+          <hr/>
+          <p>Website designed and crafted by Subha Epari @Pluralsight. </p>
+        </div>
+      </footer>
+
+  <script src="scripts/form-validation.js"></script>
+  <script>
+
+    function onChangePayMethod(id){
+
+        document.getElementById('bank').hidden=(id=="netBanking")?false:true;
+        document.getElementById('bank').disabled=(id=="netBanking")?false:true;
+
+        document.getElementById('card-details').hidden=(id=="card")?false:true;
+
+
+         var nodes = document.getElementById(id).getElementsByTagName('*');
+            for(var i = 0; i < nodes.length; i++){
+      
+                nodes[i].disabled = (id=="card")?false:true;
+                
+            }
+}
+  </script>
+
+
+</body>
+
+</html>
