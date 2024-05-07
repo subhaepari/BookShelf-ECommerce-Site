@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Book Shelf</title>
+    <title>BookShelf</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet">      
@@ -15,7 +15,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm bg-light"> 
+        <nav class="navbar navbar-expand-sm bg-light header-border"> 
             <div class="container-fluid">
                 <div class="d-flex">
                     <a class="navbar-brand" href="javascript:void(0)">
@@ -34,7 +34,7 @@
 
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="login.html">Best Sellers</a>
+                            <a class="nav-link" href="login.html">&nbspBest Sellers</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="login.html">Off the Press</a>
@@ -54,19 +54,25 @@
                     </form>
                 </div>
 
-                <div class="d-flex justify-content-end" id="header-icons">
+                <div class="d-flex justify-content-end">
                     <a class="nav-link" href="index.html" title="Home Page">
-                        <img src="images/icons/Double-J-Design-Origami-Colored-Pencil-Red-home.48.png" alt="Home" >
-                    </a>
-                    <a class="nav-link" href="login.html" title="User Profile">
-                        <img src="images/icons/Custom-Icon-Design-Pretty-Office-2-Man.48.png" alt="Login">
-                    </a>
-                    <a class="nav-link" href="javascript:void(0)" title="Wishlist">
-                        <img src="images/icons/Hopstarter-Sleek-Xp-Basic-Favorite.48.png" alt="Wishlist">
+                        <img src="images/icons/home.png" alt="Home" >
                     </a>
                     <a class="nav-link" href="/cart.html" title="Cart">
-                        <img src="images/icons/Artdesigner-Urban-Stories-Cart.48.png" alt="Cart">
+                        <img src="images/icons/cart.png" alt="Cart">
                     </a>
+                    <a class="nav-link" href="javascript:void(0)" title="Wishlist">
+                        <img src="images/icons/heart.png" alt="Wishlist">
+                    </a>
+                    <div class="nav-link dropdown">
+                       <img src="images/icons/user.png" alt="Login">
+                        <div class="dropdown-content">
+                          <a href="login.html">Sign In</a>
+                          <a href="Register.html">Sign&nbspUp</a>
+                          <a href="#">Profile</a>
+                          <a href="#">Orders</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>

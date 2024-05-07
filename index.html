@@ -5,7 +5,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Book Shelf</title>
+        <title>BookShelf</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -17,13 +17,7 @@
 
 
     <header>
-        
-        <!-- <h1>BookShelf</h1> -->
-
-
-
-        
-        <nav class="navbar navbar-expand-sm bg-light"> <!--bg-dark navbar-dark bg-transparent-->
+        <nav class="navbar navbar-expand-sm bg-light header-border"> 
             <div class="container-fluid">
                 <div class="d-flex">
                     <a class="navbar-brand" href="javascript:void(0)">
@@ -35,22 +29,17 @@
                     </div>
               </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-                    <!-- <span class="navbar-toggler-icon"></span> -->
                     <i class="fa fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="mynavbar">
 
                     <ul class="navbar-nav me-auto">
-                        <!-- <li class="nav-item">
-                            <a class="nav-link" href="index.html" title="Home Page">
-                                <img src="images/icons/Double-J-Design-Origami-Colored-Pencil-Red-home.48.png" alt="Home" >
-                            </a>
-                        </li> -->
+  
                         <li class="nav-item">
-                            <a class="nav-link" href="login.html">Best Sellers</a>
+                            <a class="nav-link" href="#">&nbspBest Sellers</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="login.html">New Arrivals</a>
+                            <a class="nav-link" href="#">Off the Press</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="cart.html">Top Deals</a>
@@ -59,76 +48,44 @@
                             <a class="nav-link" href="#contact">Contact Us</a>
                         </li>
                     </ul>
-                    <form class="d-flex">
+                    <form class="d-flex nav-search-form">
                         
                         <input class="form-control me-2" type="text" placeholder="Search...">
                         <button type="submit">
-                            <!-- <i class="fa-regular fa-magnifying-glass"></i> -->
                             <i class="fa fa-search"></i>
                         </button>
-                        <!-- <button class="btn btn-primary" type="button">Search</button> -->
                     </form>
 
                 </div>
-    <!--             <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="login.html">Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)">Wishlist</a>
-                    </li>                    
-                    <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)">Cart</a>
-                    </li>
-                </ul> -->
+
                 <div class="d-flex justify-content-end">
                     <a class="nav-link" href="index.html" title="Home Page">
-                        <img src="images/icons/Double-J-Design-Origami-Colored-Pencil-Red-home.48.png" alt="Home" >
-                    </a>
-
-                    <a class="nav-link" href="login.html" title="User Profile">
-                        <img src="images/icons/Custom-Icon-Design-Pretty-Office-2-Man.48.png" alt="Login">
-                        
-                    </a>
-                    <a class="nav-link" href="javascript:void(0)" title="Wishlist">
-                        <img src="images/icons/Hopstarter-Sleek-Xp-Basic-Favorite.48.png" alt="Wishlist">
-                        <!-- <img src="images/icons/Iconmoon-Viva-Favourites.48.png" alt="Wishlist">
-                        <img src="images/icons/Royalflushxx-Systematrix-Favorites.48.png" alt="Wishlist"> -->
-
+                        <img src="images/icons/home.png" alt="Home" >
                     </a>
                     <a class="nav-link" href="/cart.html" title="Cart">
-
-                        <img src="images/icons/Artdesigner-Urban-Stories-Cart.48.png" alt="Cart">
+                        <img src="images/icons/cart.png" alt="Cart">
                     </a>
+                    <a class="nav-link" href="javascript:void(0)" title="Wishlist">
+                        <img src="images/icons/heart.png" alt="Wishlist">
+                    </a>
+                    <div class="nav-link dropdown">
+                       <img src="images/icons/user.png" alt="Login">
+                        <div class="dropdown-content">
+                          <a href="login.html">Sign In</a>
+                          <a href="Register.html">Sign&nbspUp</a>
+                          <a href="#">Profile</a>
+                          <a href="#">Orders</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
-
-<!--         <nav class="navbar navbar-expand-lg navbar-dark  bg-light bg-primary">
-            <div class="container">
-
-                <a class="nav-link" href="index.html">Home</a>
-                <a class="nav-link" href="login.html">Login</a>
-                <a class="nav-link" href="cart.html">Cart</a>
-            </div>
-
-        </nav> -->
-
-<!--         <button class="btn btn-primary d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasId">
-            Open Offcanvas Sidebar
-          </button> -->
-          <button class="btn btn-primary d-md-none" type="button" data-bs-toggle="accordion" data-bs-target="#accordionPanel">
-            Browse Catalogue
-          </button>
     </header>
 
 
 
 
     <main class="container" role="main">
-
-
-
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -157,6 +114,13 @@
                   <p>Books to meet the soul of every avid reader out there</p>
                 </div>
               </div>
+             <!-- <div class="carousel-item">
+                <img src="images/misc/pic7.png" class="d-block w-100" alt="Book aisle">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5></h5>
+                  <p>Celebrate Books</p>
+                </div>
+              </div>  -->
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
