@@ -10,7 +10,7 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet">      
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" type="image/x-icon" href="/images/favicon.jpeg">
+    <link rel="icon" type="image/x-icon" href="images/favicon.jpeg">
 </head>
 
 <body>
@@ -18,7 +18,7 @@
         <nav class="navbar navbar-expand-sm bg-light header-border"> 
             <div class="container-fluid">
                 <div class="d-flex">
-                    <a class="navbar-brand" href="javascript:void(0)">
+                    <a class="navbar-brand" href="books.html">
                         <img src="images/favicon.jpeg"/>
                     </a> 
                     <div>
@@ -34,16 +34,16 @@
 
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="login.html">&nbspBest Sellers</a>
+                            <a class="nav-link" href="#">&nbsp&nbspBest Sellers</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="login.html">Off the Press</a>
+                            <a class="nav-link" href="#">Off the Press</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="cart.html">Top Deals</a>
+                            <a class="nav-link" href="#">Top Deals</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="cart.html">Contact Us</a>
+                            <a class="nav-link" href="index.html#contact">Contact Us</a>
                         </li>
                     </ul>
                     <form class="d-flex">
@@ -58,10 +58,10 @@
                     <a class="nav-link" href="index.html" title="Home Page">
                         <img src="images/icons/home.png" alt="Home" >
                     </a>
-                    <a class="nav-link" href="/cart.html" title="Cart">
+                    <a class="nav-link" href="cart.html" title="Cart">
                         <img src="images/icons/cart.png" alt="Cart">
                     </a>
-                    <a class="nav-link" href="javascript:void(0)" title="Wishlist">
+                    <a class="nav-link" href="#" title="Wishlist">
                         <img src="images/icons/heart.png" alt="Wishlist">
                     </a>
                     <div class="nav-link dropdown">
@@ -86,9 +86,9 @@
 
             <nav class="my-3 ms-3" style="--bs-breadcrumb-divider: '>';">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="/">Home</a></li>
-                    <li class="breadcrumb-item"><a href="/books.html">Books</a></li>                  
-                    <li class="breadcrumb-item"><a href="/book-detail.html">Book Detail</a></li>
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="books.html">Books</a></li>                  
+                    <li class="breadcrumb-item"><a href="book-detail.html">Book Detail</a></li>
                     <li class="breadcrumb-item active" aria-current="page">Cart Checkout</li>
                 </ol>
             </nav>
@@ -98,7 +98,7 @@
                 <div class="row">
                     <div class="col-md-10 offset-md-1">
                         <div class="table-responsive-sm">
-                            <table class="table table-sm "> <!--w-auto-->
+                            <table id= "table-cart-id" class="table table-sm "> <!--w-auto-->
                                 <thead>
                                     <tr>
                                         <th scope="col" > 
@@ -205,9 +205,6 @@
                             </table>
                         </div>   
                         <hr class="my-4">    
-                    <!-- <button  id="btn-place-order" class="w-100 btn btn-primary btn-lg" type="submit">Place order</button>    
-
-                    <a href="books.html" class="btn btn-primary" id="btn-bookshelf-browse1">Browse BookShelf</a> -->
                     <div class="col text-center">
                     <a href="payment.html" class="btn btn-primary" id="btn-place-order">Proceed for Payment and Order</a>
       

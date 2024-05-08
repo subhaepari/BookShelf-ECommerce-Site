@@ -81,7 +81,8 @@ body {
   /* background-color: rgb(225, 182, 103); */
   background-color: white;
   color: rgb(32, 162, 149);
-  width: 30%;
+  /* width: 30%; */
+  width: 200px;
   font-weight: 600;
   font-size: 30px;
   padding: 10px;
@@ -92,9 +93,9 @@ body {
   letter-spacing: 1px;
 }
 
-#btn-register {
+/* #btn-register {
   width: 40%;
-}
+} */
 
 #btn-sign-in:hover,
 #btn-register:hover {
@@ -116,8 +117,17 @@ body {
 .my-text-color {
   color: rgb(32, 162, 149);
 }
-.my-link-color {
+.my-link {
   color: rgb(43, 43, 138);
+  text-decoration: none;
+}
+
+.my-link:hover {
+  text-decoration: underline;
+}
+
+.my-radio-color {
+  border-color: rgb(237, 176, 63);
 }
 
 /************** Header styles ************************/
@@ -181,15 +191,6 @@ h1 small {
 
 #btn-bookshelf-browse,
 #btn-bookshelf-browse1 {
-  /* background-color: rgb(237, 176, 63);
-    color: rgb(32, 162, 149);
-    width:40%;
-    font-weight: 600;
-    font-size: 40px;
-    padding: 10px;
-    padding-bottom: 7px;
-    border-radius: 20; */
-
   background-color: white;
   color: rgb(32, 162, 149);
   width: 50%;
@@ -265,9 +266,9 @@ h1 small {
   background-color:rgb(233, 199, 137) ;
 }
 
-.accord-custom-btn{
-  /* color: rgb(32, 162, 149); */
-}
+/* .accord-custom-btn{
+  color: rgb(32, 162, 149);
+} */
 
 .accord-custom a{
 
@@ -398,6 +399,19 @@ h1 small {
 }
 
 /******* Cart checkout and Payment pages *********/
+
+#table-cart-id a{
+  color: rgb(43, 43, 138);
+  text-decoration: none;
+
+}
+
+#table-cart-id a:hover{
+  text-decoration: underline;
+
+}
+
+
 #btn-place-order {
   background-color: white;
   color: rgb(32, 162, 149);
@@ -473,4 +487,11 @@ h1 small {
 /* .dropdown:hover .dropbtn {background-color: #3e8e41;} */
 .dropdown img:hover {
   transform: scale(1.5);
+}
+
+
+
+.book-preview-div{
+
+  margin-top: 100px;
 }

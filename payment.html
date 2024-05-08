@@ -10,7 +10,7 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet">      
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" type="image/x-icon" href="/images/favicon.jpeg">
+    <link rel="icon" type="image/x-icon" href="images/favicon.jpeg">
 </head>
 
 <body>
@@ -18,7 +18,7 @@
         <nav class="navbar navbar-expand-sm bg-light header-border"> 
             <div class="container-fluid">
                 <div class="d-flex">
-                    <a class="navbar-brand" href="javascript:void(0)">
+                    <a class="navbar-brand" href="books.html">
                         <img src="images/favicon.jpeg"/>
                     </a> 
                     <div>
@@ -34,16 +34,16 @@
 
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="login.html">&nbspBest Sellers</a>
+                            <a class="nav-link" href="#">&nbsp&nbspBest Sellers</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="login.html">Off the Press</a>
+                            <a class="nav-link" href="#">Off the Press</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="cart.html">Top Deals</a>
+                            <a class="nav-link" href="#">Top Deals</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="cart.html">Contact Us</a>
+                            <a class="nav-link" href="index.html#contact">Contact Us</a>
                         </li>
                     </ul>
                     <form class="d-flex">
@@ -58,7 +58,7 @@
                     <a class="nav-link" href="index.html" title="Home Page">
                         <img src="images/icons/home.png" alt="Home" >
                     </a>
-                    <a class="nav-link" href="/cart.html" title="Cart">
+                    <a class="nav-link" href="cart.html" title="Cart">
                         <img src="images/icons/cart.png" alt="Cart">
                     </a>
                     <a class="nav-link" href="javascript:void(0)" title="Wishlist">
@@ -85,174 +85,42 @@
 
             <nav class="my-3 ms-3" style="--bs-breadcrumb-divider: '>';">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="/">Home</a></li>
-                    <li class="breadcrumb-item"><a href="/books.html">Books</a></li>                  
-                    <li class="breadcrumb-item"><a href="/book-detail.html">Book Detail</a></li>
-                    <li class="breadcrumb-item"><a href="/cart.html">Cart Checkout</a></li>
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="books.html">Books</a></li>                  
+                    <li class="breadcrumb-item"><a href="book-detail.html">Book Detail</a></li>
+                    <li class="breadcrumb-item"><a href="cart.html">Cart Checkout</a></li>
                     <li class="breadcrumb-item active" aria-current="page">Payment & Order</li>
                 </ol>
             </nav>
-            <div class="p-2 text-center">
+            <div class="p-2 text-center my-text-color">
                 <h2>Shipping and Payment Details</h2>
             </div>
 
-            <!-- <div class="row">
-               
-
-                <div class="table-responsive-sm">
-                    <table class="table table-sm "> 
-                        <thead>
-                            <tr>
-                                <th scope="col" > 
-                                    <input class="form-check-input" type="checkbox" value="" id="cart-item-chk-all" title="Select All" checked/>
-                                </th>
-                                <th scope="col"></th>
-                                <th scope="col"></th>
-                                <th scope="col" class="text-end">Price</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="align-middle"><input class="form-check-input" type="checkbox" value="" id="cart-item-chk-1" checked/></td>
-                                <td class="w-25"><img src="images/cart/paper-dolls.png" alt="Paper Dolls" width="150" height="200"></td>
-                                <td >
-                                    <div >
-                                            <h5>Paper Dolls</h5>
-                                            <p>by Julia Donaldson</p>
-                                    </div>
-                                  
-                                    <div class="align-text-bottom">
-                                        <a href="javascript:(void)" >Delete</a> | <a href="javascript:(void)" >Save for later</a> | <a href="javascript:(void)" >Share</a>
-                                        <br/><br/>
-                                        Quantity: <input  style="max-width:50px;padding-right:0;" type=number class="form-control" value="1"> 
-                                        <br/>
-                                    </div>
-                                </td>                               
-                                <td class="text-end">&#x20B9;328 <br/><small>MRP: <s>&#x20B9;499</s></small></td>
-                            </tr>
-                            <tr>
-                                <td class="align-middle"><input class="form-check-input" type="checkbox" value="" id="cart-item-chk-2" checked/></td>
-                                <td><img src="images/cart/room-on-the-broom.png" alt="Room on the Broom" width="150" height="200"></td>
-                                <td>
-                                    <div>
-                                        <h5>The Hunt for the Golden Book</h5>
-                                        <p>by Elisabeta Dami</p>
-                                    </div>                                    
-                                    <div class="align-text-bottom">
-                                        <a href="javascript:(void)" >Delete</a> | <a href="javascript:(void)" >Save for later</a> | <a href="javascript:(void)" >Share</a>
-                                        <br/><br/>
-                                        Quantity: <input  style="max-width:50px;padding-right:0;" type=number class="form-control" value="1"> 
-                                        <br/>
-                                    </div>
-                                </td>  
-                                <td class="text-end">&#x20B9;296 <br/><small>MRP: <s>&#8377;450</s></small></td>
-                            </tr>
-                            <tr>
-                                <td class="align-middle"><input class="form-check-input" type="checkbox" value="" id="cart-item-chk-3" checked/></td>
-                                <td><img src="images/cart/how-to-catch-a-star.png" alt="How to Catch A Star" width="150" height="200"></td>
-                                <td>
-                                    <div>
-                                        <h5>The Hunt for the Golden Book</h5>
-                                        <p>by Elisabeta Dami</p>
-                                    </div>                                    
-                                    <div class="align-text-bottom">
-                                        <a href="javascript:(void)" >Delete</a> | <a href="javascript:(void)" >Save for later</a> | <a href="javascript:(void)" >Share</a>
-                                        <br/><br/>
-                                        Quantity: <input  style="max-width:50px;padding-right:0;" type=number class="form-control" value="1"> 
-                                        <br/>
-                                    </div>
-                                </td>  
-                                <td class="text-end">&#x20B9;314 <br/>
-                                    <span class="small">MRP: <s>&#8377;350</s></span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="align-middle"><input class="form-check-input" type="checkbox" value="" id="cart-item-chk-1" checked/></td>
-                                <td class="w-25"><img src="images/cart/TheHuntForGoldenBook.jpg" alt="Paper Dolls" width="150" height="180"></td>
-                                <td>
-                                    <div>
-                                        <h5>The Hunt for the Golden Book</h5>
-                                        <p>by Elisabeta Dami</p>
-                                    </div>                                    
-                                    <div class="align-text-bottom">
-                                        <a href="javascript:(void)" >Delete</a> | <a href="javascript:(void)" >Save for later</a> | <a href="javascript:(void)" >Share</a>
-                                        <br/><br/>
-                                        Quantity: <input  style="max-width:50px;padding-right:0;" type=number class="form-control" value="1"> 
-                                        <br/>
-                                    </div>
-                                </td>                               
-                                <td class="text-end">&#x20B9;370 <br/><small>MRP: <s>&#x20B9;499</s></small></td>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                              <td colspan="3">Your order sub-total:</td>  
-                              <td class="text-end">&#x20B9;1308</td>
-                            </tr>
-                            <tr>
-                                <td colspan="3">Shipping charges:</td>  
-                                <td class="text-end">&#x20B9;200</td>
-                            </tr>
-                            <tr>
-                                <td colspan="3">Tax:</td>  
-                                <td class="text-end">&#x20B9;100</td>
-                            </tr>
-                            <tr>
-                                <td colspan="3"><strong>Your order total: </strong></td>  
-                                <td class="text-end"><strong>&#x20B9;1608</strong></td>
-                              </tr>
-                          </tfoot>
-                    </table>
-                </div>  
-            </div> -->
-
-
-
-
+   
             <div class="row g-5">
-                <div class="col-md-5 col-lg-4 order-md-last">
 
-                <!-- <h4 class="mb-3">Redeem coupon</h4>
-                    <form class="card p-2">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Promo code">
-                            <button type="submit" class="btn btn-secondary">Redeem</button>
-                        </div>
-                    </form> -->
+                <!--Delivery Address-->
+                <div class="col-md-5 col-lg-4 order-md-last">
                     <hr class="my-4">
-                    <h4 class="mb-3">Delivery Address</h4>
-                    <p class="card p-2">
-                        
-                        Pluralsight India Pvt. Ltd. <br/>
-                        Primco Spectrum, Arekere Jn, <br/>
+                    <h4 class="mb-3 my-text-color">Delivery Address</h4>
+                    <p class="card p-2">             
+                        Cherub Angel Kindergarten, <br/>
+                        Rainbow Towers, Arekere Jn, <br/>
                         Bengaluru, Karnataka <br/>
                         Pin - 5600076
-
                     </p>
-                    <a  href="javascript:void(0)">Change Address</a>
-
-
+                    <a  href="javascript:void(0)" class="my-link">Change Address</a>
                 </div>
 
                 <div class="col-md-7 col-lg-8">
 
                     <hr class="my-4">
 
-                    <!--Delivery Address-->
+                    
                     <div class="row mb-3">
-                        <!-- <h4 class="col-md-4">Delivery Address</h4>
-                        <p class="col-md-5">
-                            
-                            Pluralsight India Pvt. Ltd. <br/>
-                            11<sup>th</sup> floor, Arekere Jn, <br/>
-                            Bengaluru, Karnataka <br/>
-                            Pin - 5600076
-
-                        </p>
-                        <a class="col-md-3" href="javascript:void(0)">Change</a> -->
                         
-                        <h4 class="mb-3">Redeem coupon</h4>
-                        <div class="w-50 text-center" >
+                        <h4 class="mb-3 my-text-color">Redeem coupon</h4>
+                        <div class="col-sm-10  col-md-8 col-lg-6 text-center" >
                         <form class="card p-2">
                             <div class="input-group">
                                 <input type="text" class="form-control" placeholder="Promo code">
@@ -273,7 +141,7 @@
                       
                         <!--Payment Method-->
                         <div class="my-3">
-                            <h4 class="mb-3">Select payment method</h4>
+                            <h4 class="mb-3 my-text-color">Select payment method</h4>
                             <div class="form-check">
                                 <input id="credit" name="paymentMethod" type="radio" class="form-check-input" value="card" onclick="onChangePayMethod(this.value)" checked
                                     required>

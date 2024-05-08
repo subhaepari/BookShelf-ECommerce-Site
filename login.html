@@ -12,18 +12,7 @@
       crossorigin="anonymous"
     />
     <link href="css/styles.css" rel="stylesheet" />
-    <link rel="icon" type="image/x-icon" href="/images/favicon.jpeg" />
-
-    <style>
-      .footer {
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        color: white;
-        text-align: center;
-      }
-    </style>
+    <link rel="icon" type="image/x-icon" href="images/favicon.jpeg" />
   </head>
 
   <body>
@@ -33,7 +22,7 @@
       >
         <div class="container-fluid">
           <div class="d-flex">
-            <a class="navbar-brand" href="javascript:void(0)">
+            <a class="navbar-brand" href="books.html">
               <img src="images/favicon.jpeg" />
             </a>
             <div>
@@ -41,11 +30,15 @@
               <h6 class="logo-foot">The Readers Mart</h6>
             </div>
           </div>
+          <div class="justify-content-end">
+            <a class="nav-link" href="index.html" title="Home Page">
+                <img src="images/icons/home.png" alt="Home" >
+            </a>
         </div>
       </nav>
     </header>
 
-    <main class="container vh-100" role="main">
+    <main class="container" role="main">
       <div class="p-2 login-head">
         <br />
         <h2>Enter the realm of knowledge...</h2>
@@ -54,7 +47,7 @@
       </div>
 
       <div class="row">
-        <div class="col-md-6 text-center">
+        <div class="col-md-6 text-center mb-4">
           <img id="login-img" src="images/misc/pic9.png" width="" />
         </div>
 
@@ -65,7 +58,7 @@
           </div>
 
           <form
-            action="/index.html"
+            action="index.html"
             class="needs-validation"
             method="get"
             novalidate
@@ -115,7 +108,7 @@
 
               <div class="col">
                 <!-- Simple link -->
-                <a href="#!" class="my-link-color">Forgot password?</a>
+                <a href="#!" class="my-link">Forgot password?</a>
               </div>
             </div>
 
@@ -134,7 +127,7 @@
             <div class="row mt-4 mb-4 text-center">
               <div class="col">
                 <!-- Simple link -->
-                <a href="register.html" class="my-link-color"
+                <a href="register.html" class="my-link"
                   >New user? Go ahead to register.</a
                 >
               </div>
