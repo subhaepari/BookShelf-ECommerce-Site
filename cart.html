@@ -14,8 +14,9 @@
 </head>
 
 <body>
+    
     <header>
-        <nav class="navbar navbar-expand-sm bg-light header-border"> 
+        <nav class="navbar navbar-expand-xl bg-light header-border"> 
             <div class="container-fluid">
                 <div class="d-flex">
                     <a class="navbar-brand" href="books.html">
@@ -76,7 +77,6 @@
                 </div>
             </div>
         </nav>
-
     </header>
 
 
@@ -225,26 +225,6 @@
           <p>Website designed and crafted by Subha Epari @Pluralsight. </p>
         </div>
       </footer>
-
-  <script src="scripts/form-validation.js"></script>
-  <script>
-
-    function onChangePayMethod(id){
-
-        document.getElementById('bank').hidden=(id=="netBanking")?false:true;
-        document.getElementById('bank').disabled=(id=="netBanking")?false:true;
-
-        document.getElementById('card-details').hidden=(id=="card")?false:true;
-
-
-         var nodes = document.getElementById(id).getElementsByTagName('*');
-            for(var i = 0; i < nodes.length; i++){
-      
-                nodes[i].disabled = (id=="card")?false:true;
-                
-            }
-}
-  </script>
 
 
 </body>
