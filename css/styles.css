@@ -301,6 +301,33 @@ h1 small {
   color: rgb(8, 29, 164);
 }
 
+
+.ribbon {
+  width: 60px;
+  font-size: 14px;
+  padding: 4px;
+  position: absolute;
+  right: -25px;
+  top: -12px;
+  text-align: center;
+  border-radius: 25px;
+  transform: rotate(20deg);
+  background-color: #ff9800;
+  color: white;
+}
+
+.new-ribbon {
+
+  background-color: #00a2ff;
+
+}
+
+.hot-ribbon {
+
+  background-color: rgb(163, 16, 16);
+
+}
+
 /********** Off Canvas Menu ************************************/
 
 /* The side navigation menu */
