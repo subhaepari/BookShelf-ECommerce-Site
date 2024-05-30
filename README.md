@@ -24,5 +24,7 @@ Portrays an array of books on bootstrap cards. Each card highlights on some impo
  
 A menu to browse through the different categories of books. Leverages the Bootstrap Accordion component. It can be closed and opened. Visible by default on large screens and closed by default on small screens. 
 
+<img width="1512" alt="BookShelf - Books Top" src="https://github.com/subhaepari/BookShelf-ECommerce-Site/assets/144544428/d31df121-ec10-4d74-b131-54a212d00ac2">
+
 <img width="1512" alt="BookShelf - Books  Bottom" src="https://github.com/subhaepari/BookShelf-ECommerce-Site/assets/144544428/e9dcfa65-c9dc-4bc9-9249-eb4cba509347">
 
