@@ -22,5 +22,7 @@ Leads to the Main Books page through a “Browse Bookshelf” button.
 
 Portrays an array of books on bootstrap cards. Each card highlights on some important book details. Each card provides options to add book to cart, add book to wishlist and share. Each card show different hover effects.
  
-A menu to browse through the different categories of books. Leverages the Bootstrap Accordion component. It can be closed and opened. Visible by default on large screens and closed by default on small screens.
- 
+A menu to browse through the different categories of books. Leverages the Bootstrap Accordion component. It can be closed and opened. Visible by default on large screens and closed by default on small screens. 
+
+<img width="1512" alt="BookShelf - Books  Bottom" src="https://github.com/subhaepari/BookShelf-ECommerce-Site/assets/144544428/e9dcfa65-c9dc-4bc9-9249-eb4cba509347">
+
