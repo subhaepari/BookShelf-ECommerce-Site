@@ -18,8 +18,9 @@ Displays a panel of inspiring quotes on books.
 Displays contact information and social media connects of the website.
 Leads to the Main Books page through a “Browse Bookshelf” button.
 
-<img width="1512" alt="BookShelf - Home Carousel Slide2" src="https://github.com/subhaepari/BookShelf-ECommerce-Site/assets/144544428/b68e708a-e281-4f3d-b4be-cb4bfb3eb579">
 <img width="1512" alt="Bookshelf - Home Carousel Slide1 " src="https://github.com/subhaepari/BookShelf-ECommerce-Site/assets/144544428/8398c161-8211-44b8-bcac-ee3c66279f47">
+
+<img width="1512" alt="BookShelf - Home Carousel Slide2" src="https://github.com/subhaepari/BookShelf-ECommerce-Site/assets/144544428/b68e708a-e281-4f3d-b4be-cb4bfb3eb579">
 
 
 #### Books Page
