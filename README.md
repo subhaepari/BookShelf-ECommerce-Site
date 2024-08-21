@@ -14,11 +14,11 @@ In order to explore the page navigations, the hover effects on the buttons, link
 ## Header and Pages 
 Here are some glimpses of the UI. But for a holistic experience browse BookShelf deployed as Github Pages.
 
-#### Navigation Header 
+### Navigation Header 
 It is the common header across all the pages of the website. Leverages the bootstrap nav-bar component with special customizations.
 Portrays a CSS designed logo, links, search bar and important icon links for home, cart, wishlist pages. A user icon with a hover menu leading to user specific links.
 
-#### Home Page 
+### Home Page 
 The landing page for the website with some welcoming  images running on a carousel.
 Displays a panel of inspiring quotes on books.
 Displays contact information and social media connects of the website.
@@ -29,7 +29,7 @@ Leads to the Main Books page through a “Browse Bookshelf” button.
 <img width="1512" alt="BookShelf - Home Carousel Slide2" src="https://github.com/subhaepari/BookShelf-ECommerce-Site/assets/144544428/b68e708a-e281-4f3d-b4be-cb4bfb3eb579">
 
 
-#### Books Page
+### Books Page
 
 Portrays an array of books on bootstrap cards. Each card highlights on some important book details. Each card provides options to add book to cart, add book to wishlist and share. Each card show different hover effects.
  
@@ -38,4 +38,24 @@ A menu to browse through the different categories of books. Leverages the Bootst
 <img width="1512" alt="BookShelf - Books Top" src="https://github.com/subhaepari/BookShelf-ECommerce-Site/assets/144544428/d31df121-ec10-4d74-b131-54a212d00ac2">
 
 <img width="1512" alt="BookShelf - Books  Bottom" src="https://github.com/subhaepari/BookShelf-ECommerce-Site/assets/144544428/e9dcfa65-c9dc-4bc9-9249-eb4cba509347">
+
+### A Quick Run on the Small Screen
+
+Note how the Navigation Bar collapses and uncollapses in response to a toggle button on the top-right corner. 
+
+<img width="627" alt="HomeSmall" src="https://github.com/user-attachments/assets/b1c82539-2fdc-4cf6-a95e-18cff00f6f6f">
+<img width="627" alt="HomeSmallNavBarOpen" src="https://github.com/user-attachments/assets/17cd49cc-3116-4391-8ac1-5cce72c00ae2">
+
+
+<img width="627" alt="BooksSamll" src="https://github.com/user-attachments/assets/880de6a9-8bd0-405c-a7da-2a325d29bcfe">
+<img width="627" alt="BooksSmallNBOpen" src="https://github.com/user-attachments/assets/fadd02be-b6bb-48b5-834d-39f2c634e6d5">
+<img width="627" alt="CartSmall" src="https://github.com/user-attachments/assets/995147dc-883e-4918-bcdf-d243fa8e7bb2">
+
+
+<img width="627" alt="CartSmallNavBarOpen" src="https://github.com/user-attachments/assets/94c3d62d-9adc-4ecd-844b-b459d5a445bf">
+<img width="627" alt="CartSmallBottom" src="https://github.com/user-attachments/assets/773691ca-68dd-4a65-91a1-7d03e61b5f92">
+
+
+<img width="627" alt="CheckOutSmall" src="https://github.com/user-attachments/assets/f8cb7a9f-5980-4879-9417-aca63f2aa28b">
+<img width="627" alt="CheckoutBottomSmall" src="https://github.com/user-attachments/assets/eb824a5f-317e-43e6-804c-711a9f57fcc0">
 
