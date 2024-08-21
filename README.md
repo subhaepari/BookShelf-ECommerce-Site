@@ -12,7 +12,7 @@ Tried to incorporate the key UI/UX design principles.
 In order to explore the page navigations, the hover effects on the buttons, links, pictures, etc. you could browse through the GitHub Deployment of this website at this link - [BookShelf](https://subhaepari.github.io/BookShelf-ECommerce-Site/)
 
 ## Header and Pages 
-Here are some glimpses of the UI. But for a holistic experience browse BookShelf deployed as Github Pages.
+Here are some glimpses of the UI. But for a holistic experience browse [BookShelf](https://subhaepari.github.io/BookShelf-ECommerce-Site/) deployed as Github Pages.
 
 ### Navigation Header 
 It is the common header across all the pages of the website. Leverages the bootstrap nav-bar component with special customizations.
@@ -77,7 +77,7 @@ To proceed for checkout, payment and order you could reach here form the 'Cart P
 
 <img width="1512" alt="CheckoutBottom" src="https://github.com/user-attachments/assets/a3e21d21-d85f-4b02-86a1-d60e7d9ddaef">
 
-### A Quick Run on the Small Screen
+## A Quick Run on the Small Screen
 
 Note how the Navigation Bar collapses and uncollapses in response to a toggle button on the top-right corner. 
 
