@@ -1,15 +1,21 @@
-### BookShelf - The Readers Mart
+# BookShelf - The Readers Mart
  Books are noble and paramount for the mind, heart and soul.
  This ecommerce website for books is the one-stop solution for all the avid readers out there.
-Aims to Enthuse, Empower and Enlighten every reader with its humongous collection of books.
+ Aims to Enthuse, Empower and Enlighten every reader with its humongous collection of books.
 
-
-#### Technologies 
+## Technologies 
 HTML, CSS, Bootstrap are the predominantly used skills here.
 This is a completely responsive website.
 Tried to incorporate the key UI/UX design principles.
 
-Navigation Header - It is the common header across all the pages of the website. Leverages the bootstrap nav-bar component with special customizations.
+## Browse BookShelf
+In order to explore the page navigations, the hover effects on the buttons, links, pictures, etc. you could browse through the GitHub Deployment of this website at this link - [BookShelf](https://subhaepari.github.io/BookShelf-ECommerce-Site/)
+
+## Header and Pages 
+Here are some glimpses of the UI. But for a holistic experience browse BookShelf deployed as Github Pages.
+
+#### Navigation Header 
+It is the common header across all the pages of the website. Leverages the bootstrap nav-bar component with special customizations.
 Portrays a CSS designed logo, links, search bar and important icon links for home, cart, wishlist pages. A user icon with a hover menu leading to user specific links.
 
 #### Home Page 
