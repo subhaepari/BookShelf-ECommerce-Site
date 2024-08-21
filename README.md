@@ -28,6 +28,8 @@ Leads to the Main Books page through a “Browse Bookshelf” button.
 
 <img width="1512" alt="BookShelf - Home Carousel Slide2" src="https://github.com/subhaepari/BookShelf-ECommerce-Site/assets/144544428/b68e708a-e281-4f3d-b4be-cb4bfb3eb579">
 
+<img width="1512" alt="Home Page Bottom" src="https://github.com/user-attachments/assets/c0821b55-9f5c-4704-a2a1-4cb3c2437ad8">
+
 
 ### Books Page
 
@@ -38,6 +40,32 @@ A menu to browse through the different categories of books. Leverages the Bootst
 <img width="1512" alt="BookShelf - Books Top" src="https://github.com/subhaepari/BookShelf-ECommerce-Site/assets/144544428/d31df121-ec10-4d74-b131-54a212d00ac2">
 
 <img width="1512" alt="BookShelf - Books  Bottom" src="https://github.com/subhaepari/BookShelf-ECommerce-Site/assets/144544428/e9dcfa65-c9dc-4bc9-9249-eb4cba509347">
+
+### Book Detail Page
+This page provides information about the book like its author, price and rating. It includes a descriptive summary of the book.
+Buttons to perform actions on the book like the 'Add to Cart', 'Add to Wishlist', 'Buy Now'. The later allows direct checkout and payment for the book.
+A **Preview Link** takes to scroll through some sample pages of the book.
+
+<img width="1512" alt="BookDetail" src="https://github.com/user-attachments/assets/b8fa3706-2e2f-44be-a665-9e5208d729b6">
+
+### Add To Cart Page
+
+A book can be added to cart from
+- the Books Page, by clicking on the 'Cart' icon of a book card.
+- the Book details page, by clicking the 'Add To Cart' button.
+
+An Offcanvas screen appears confirming the addition of the book to the cart.
+
+<img width="1512" alt="AddToCartFromBooks" src="https://github.com/user-attachments/assets/0d489621-4aa1-42fb-80cd-ac4e69fbdb50">
+
+<img width="1512" alt="AddToCart" src="https://github.com/user-attachments/assets/4a1c1425-c065-4809-85d6-aaf779f650fa">
+
+### Cart Page
+
+### Checkout Page
+
+
+
 
 ### A Quick Run on the Small Screen
 
