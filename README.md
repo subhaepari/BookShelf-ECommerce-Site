@@ -42,9 +42,10 @@ A menu to browse through the different categories of books. Leverages the Bootst
 <img width="1512" alt="BookShelf - Books  Bottom" src="https://github.com/subhaepari/BookShelf-ECommerce-Site/assets/144544428/e9dcfa65-c9dc-4bc9-9249-eb4cba509347">
 
 ### Book Detail Page
-This page provides information about the book like its author, price and rating. It includes a descriptive summary of the book.
-Buttons to perform actions on the book like the 'Add to Cart', 'Add to Wishlist', 'Buy Now'. The later allows direct checkout and payment for the book.
-A **Preview Link** takes to scroll through some sample pages of the book.
+
+- This page provides information about the book like its author, price and rating. It includes a descriptive summary of the book.
+- Buttons to perform actions on the book like the 'Add to Cart', 'Add to Wishlist', 'Buy Now'. The later allows direct checkout and payment for the book.
+- A **Preview Link** takes to scroll through some sample pages of the book.
 
 <img width="1512" alt="BookDetail" src="https://github.com/user-attachments/assets/b8fa3706-2e2f-44be-a665-9e5208d729b6">
 
@@ -62,10 +63,19 @@ An Offcanvas screen appears confirming the addition of the book to the cart.
 
 ### Cart Page
 
+To view the current contents of the cart you could navigate here from any page by just clicking the 'Cart' icon on the header. 
+
+<img width="1512" alt="Cart" src="https://github.com/user-attachments/assets/9c9b1bf0-c1f4-459c-9482-2c42828fe4d9">
+
+<img width="1512" alt="CartBottom" src="https://github.com/user-attachments/assets/3f8aea53-749a-4f13-b355-209533a2147a">
+
 ### Checkout Page
 
+To proceed for checkout, payment and order you could reach here form the 'Cart Page' or 'Book Details Page'(Buy Now). 
 
+<img width="1512" alt="Checkout" src="https://github.com/user-attachments/assets/ece0a329-3e78-42e7-b023-5bfd24930d34">
 
+<img width="1512" alt="CheckoutBottom" src="https://github.com/user-attachments/assets/a3e21d21-d85f-4b02-86a1-d60e7d9ddaef">
 
 ### A Quick Run on the Small Screen
 
